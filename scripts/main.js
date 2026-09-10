@@ -196,7 +196,7 @@ function addSkillInteractivity() {
     'WAF', 'IAM', 'SSO', 'SAML', 'OAuth',
     'XSS', 'SQLi', 'WordPress', 'Drupal',
     'PagerDuty', 'Jira', 'GitHub', 'Linear', 'Notion',
-    'MCPs', 'AI ROI', 'AI coding'
+    'MCPs', 'AI ROI optimization', 'AI coding assistants'
   ];
   
   const paragraphs = aboutSection.querySelectorAll('p');
