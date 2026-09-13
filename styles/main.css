@@ -732,3 +732,151 @@ footer p {
     padding: var(--spacing-2xl) 0;
   }
 }
+
+/* Career Progression Section */
+.career-progression-section {
+  padding: var(--spacing-xl) 0;
+  margin-bottom: var(--spacing-xl);
+}
+
+.career-progression-section h2 {
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.progression-container {
+  max-width: 600px;
+  margin: var(--spacing-xl) auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progression-stage {
+  width: 100%;
+  background-color: var(--color-surface);
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-primary);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.progression-stage:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.2);
+}
+
+.stage-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.progression-arrow {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin: var(--spacing-sm) 0;
+  font-weight: 700;
+}
+
+.companies-worked {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: var(--color-surface);
+  border-radius: 8px;
+}
+
+.companies-label {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+.companies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.company-name {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
+  border-radius: 6px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-text);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.company-name:hover {
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+/* Looking For Section - Enhanced */
+.roles-list {
+  max-width: 700px;
+  margin: var(--spacing-lg) auto 0 auto;
+  background-color: var(--color-surface);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-primary);
+}
+
+.roles-list h3 {
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.roles-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-sm);
+}
+
+.roles-list li {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-background);
+  border-radius: 6px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-text);
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.roles-list li:hover {
+  background-color: var(--color-border);
+  transform: translateX(4px);
+}
+
+/* Tablet Adjustments for New Sections */
+@media (min-width: 768px) {
+  .roles-list ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .progression-container {
+    max-width: 700px;
+  }
+}
+
+/* Desktop Adjustments for New Sections */
+@media (min-width: 1024px) {
+  .progression-container {
+    max-width: 800px;
+  }
+}
