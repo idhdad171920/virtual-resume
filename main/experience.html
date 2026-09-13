@@ -8,71 +8,198 @@
 </head>
 <body>
   <header>
-  <h1>Virtual Resume - Sommy Yang</h1>
-  <nav class="main-nav">
-    <a href="home.html" class="nav-link" data-page="home">Home</a>
-    <a href="experience.html" class="nav-link" data-page="experience">Experience</a>
-    <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
-  </nav>
-</header>
+    <h1>Virtual Resume - Sommy Yang</h1>
+    <nav class="main-nav">
+      <a href="home.html" class="nav-link" data-page="home">Home</a>
+      <a href="experience.html" class="nav-link" data-page="experience">Experience</a>
+      <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+    </nav>
+  </header>
   
-  <main>
+  <main class="experience-page">
     <section id="experience">
-      <h2>Professional Experience</h2>
+      <h2>Experience</h2>
+      <p class="page-intro">Over 10 years of technical experience spanning enterprise SaaS, cloud platforms, APIs, integrations, security, networking, automation, incident response, and customer-facing engineering.</p>
       
-      <article class="experience-entry">
-        <h3>Platform Support Engineer | Allstacks</h3>
-  
-        <p class="experience-description">I owned technical support for SMB and enterprise customers, troubleshooting platform, data, configuration, and integration issues across Jira, Azure DevOps, GitHub, Linear, and AI coding tools. I designed a Support-to-Engineering escalation framework to triage issues and protect Engineering sprint capacity. I led weekly cross-functional bug and feature triage, representing the Voice of the Customer, and built Support operations in Pylon including SLAs, CSAT, and reporting infrastructure.</p>
-      </article>
-
-      <article class="experience-entry">
-        <h3>Senior Customer Success Engineer | Vercel</h3>
-
-        <p class="experience-description">I served as the SME for WAF, IAM, and Trust & Safety, providing technical support across all customer tiers. I designed escalation processes using Linear and Notion, led incident triages with PagerDuty and Incident.io, and managed internal tooling via GitHub. I pioneered AI-driven support initiatives with Markprompt, conducted QA audits, and helped deploy Success Center forums for customer self-service.</p>
-      </article>
-
-      <article class="experience-entry">
-        <h3>Technical Lead | Calabrio</h3>
-  
-        <p class="experience-description">I lead technical escalations as the primary Product SME for Service Delivery, handling complex Security, API, WFM, QM, and BI issues. I develop Python and Bash automation tools for server monitoring and API testing, conduct weekly technical training sessions, and lead smoke testing for AWS and Azure cloud deployments. I manage on-call responsibilities for high-severity incidents and coordinate cross-departmental escalation meetings.</p>
-      </article>
-
-      <article class="experience-entry">
-        <h3>Technical Support Engineer | Amazon Robotics</h3>
-
-        <p class="experience-description">I provided technical support for site operations, led incident resolution via PagerDuty and Slack, and facilitated daily machine health reviews. I developed Python and Java tools to monitor machine health across sites and created Perl scripts to automatically clear stalled tasks, preventing workflow disruptions. I assisted in implementing CloudWatch and Grafana alerts for real-time performance insights, authored troubleshooting guides that reduced escalations, and served as the primary after-hours contact for central and east coast operations.</p>
-      </article>
-      
-      <article class="experience-entry">
-        <h3>Web Security Engineer | Sectigo</h3>
-  
-        <p class="experience-description">I conducted website security reviews to identify malware trends and remediate infections, performed XSS and SQLi vulnerability patches, and reviewed components for hardening opportunities. I communicated technical findings to non-technical customers, managed ticket prioritization, and supported internal teams. I led vendor calls with CDN providers, served as the main escalation point for development and R&D teams, and created internal documentation. I leveraged expertise in web security, DNS, firewall technologies, and CMS platforms (WordPress, Drupal).</p>
+      <!-- Allstacks -->
+      <article class="experience-entry primary-role">
+        <h3 class="company-name">Allstacks</h3>
+        <h4 class="job-title">Platform Support Engineer</h4>
+        <p class="role-summary">Owned technical support and escalation management across 50 SMB and enterprise customer accounts, working across SaaS integrations, platform configuration, support operations, and AI tooling.</p>
+        
+        <div class="key-impact">
+          <h5>KEY IMPACT</h5>
+          <ul>
+            <li>Maintained 99% SLA attainment and 99% CSAT while achieving 99% monthly attainment against a 1-business-day first-response target and 3-business-day MTTR target.</li>
+            <li>Reduced support ticket volume and Engineering escalations by 25% month over month through stronger triage, self-service documentation, and support processes.</li>
+            <li>Created a Support-to-Engineering escalation framework to distinguish expected behavior and configuration issues from confirmed product defects, helping protect Engineering development capacity.</li>
+            <li>Led weekly cross-functional bug and feature triage across Pre-Sales, Sales, Customer Success, Engineering, and Product, representing Voice of Customer feedback and helping align issues and requests with roadmap priorities.</li>
+            <li>Built and improved support operations through Pylon, Microsoft Teams and Slack bots, technical documentation, ticket tagging, and reporting across SLA, CSAT, first response, MTTR, escalation rates, deflection, and first-contact resolution.</li>
+          </ul>
+        </div>
+        
+        <div class="technologies">
+          <h5>TECHNOLOGIES / PLATFORMS</h5>
+          <p class="tech-tags">Jira · Azure DevOps · GitHub · Linear · Pylon · Microsoft Teams · Slack · GitHub Copilot · Cursor · Claude Code · Kiro · APIs · Integrations</p>
+        </div>
       </article>
       
-      <article class="experience-entry">
-        <h3>Help Desk Technician | Arvig</h3>
-
-        <p class="experience-description">I spearheaded the launch of a new support office, establishing core processes and performance standards. I served as the senior escalation point for complex network issues, leveraging Wireshark for packet analysis across fiber, DSL, and wireless infrastructure. I led the fiber support initiative with remote troubleshooting via Bomgar, achieved the highest CSAT and lowest MTTS across all offices, and mentored new hires while developing troubleshooting documentation.</p>
+      <!-- Vercel -->
+      <article class="experience-entry primary-role">
+        <h3 class="company-name">Vercel</h3>
+        <h4 class="job-title">Senior Customer Success Engineer</h4>
+        <p class="role-summary">Supported 100+ Enterprise, Pro, and Hobby customers across cloud platforms, security, identity, production troubleshooting, and customer-facing engineering.</p>
+        
+        <div class="key-impact">
+          <h5>KEY IMPACT</h5>
+          <ul>
+            <li>Supported 100+ customer accounts while maintaining 97% Enterprise SLA attainment, 95% CSAT quarter over quarter, and 97% first-response target attainment.</li>
+            <li>Served as an SME across WAF, IAM, and Trust & Safety while troubleshooting security, identity, platform configuration, and production issues.</li>
+            <li>Led six SME assignments and developed structured Engineering escalation workflows, including escalation templates for IAM, WAF, and Audit Logging, while first-response and first-contact-resolution performance improved 15% quarter over quarter.</li>
+            <li>Partnered with Product and Engineering through recurring bug, escalation, feature, and launch discussions, helping improve attainment against the 5-business-day MTTR target from 87% to 94% quarter over quarter.</li>
+            <li>Improved technical self-service through documentation and Markprompt AI training around IAM, WAF, and Audit Logging, contributing to approximately 10% quarter-over-quarter ticket deflection in those areas.</li>
+          </ul>
+        </div>
+        
+        <div class="technologies">
+          <h5>TECHNOLOGIES / PLATFORMS</h5>
+          <p class="tech-tags">Vercel · WAF · IAM · SSO/SAML · OAuth · GitHub · Linear · LaunchDarkly · PagerDuty · Incident.io · Atlassian Status · Markprompt AI · Notion · Slack</p>
+        </div>
       </article>
       
-      <article class="experience-entry">
-        <h3>Technical Support Representative | HCL Technologies</h3>
-
-        <p class="experience-description">I led phone conferences with enterprise customers on Learning Management System (LMS) integrations, deployed and configured LMS integration hubs for data synchronization, and documented defects for Knowledge Base contributions. I served as the SME for platform configurations, mentored Level 1 and Level 2 support staff, and acted as the main escalation point for feature enhancements and defects. I achieved the highest case volume resolution with a 90% customer satisfaction rate.</p>
+      <!-- Calabrio -->
+      <article class="experience-entry primary-role">
+        <h3 class="company-name">Calabrio</h3>
+        <h4 class="job-title">Technical Lead</h4>
+        <p class="role-summary">Led technical support, SME programs, Engineering escalations, automation, cloud deployment validation, and technical enablement across enterprise workforce management and analytics products.</p>
+        
+        <div class="key-impact">
+          <h5>KEY IMPACT</h5>
+          <ul>
+            <li>Served as the primary API and Workforce Management SME, achieving approximately 90% Engineering deflection for related cases and 97% attainment against a 3-business-day MTTR target.</li>
+            <li>Created six cross-product Engineering escalation templates covering reproduction steps, expected behavior, errors, logging, and product context, while monthly technical enablement contributed to a 20% quarter-over-quarter decrease in Engineering escalations.</li>
+            <li>Audited 30+ cases monthly across Customer Success and Professional Services to identify troubleshooting, documentation, escalation, product-tagging, and training opportunities.</li>
+            <li>Built Power Automate notifications for high-severity cases, contributing to 95% first-response target attainment, and managed four WFM technical labs using CSV data, webhook API calls, and Bash automation.</li>
+            <li>Led post-cloud-deployment validation across six AWS sub-region instances and coordinated product-launch activities across Product, Engineering, Sales, Implementation, Customer Success, and Professional Services.</li>
+          </ul>
+        </div>
+        
+        <div class="technologies">
+          <h5>TECHNOLOGIES / AREAS</h5>
+          <p class="tech-tags">APIs · Webhooks · AWS · Azure · Bash · Python · Power Automate · IAM · SSO/SAML · Salesforce · Microsoft Teams</p>
+        </div>
       </article>
       
-      <article class="experience-entry">
-        <h3>Student Center Technology Support | Lake Superior College</h3>
-
-        <p class="experience-description">I diagnosed and repaired hardware and software components, maintained accurate inventory records including software licenses, and conducted forensics on workstations, printers, and servers. I utilized Microsoft Access to manage help desk requests and maintained a comprehensive inventory of equipment and resources.</p>
+      <!-- Amazon Robotics -->
+      <article class="experience-entry secondary-role">
+        <h3 class="company-name">Amazon Robotics</h3>
+        <h4 class="job-title">Technical Support Engineer</h4>
+        <p class="role-summary">Supported site operations across robotics environments with a focus on incident response, machine health, monitoring, and automation.</p>
+        
+        <div class="key-impact">
+          <h5>KEY IMPACT</h5>
+          <ul>
+            <li>Provided technical support for site operations and led incident resolution through PagerDuty and Slack, including daily machine-health reviews and after-hours coverage for Central and East Coast operations.</li>
+            <li>Developed Python and Java monitoring tools and Perl automation to monitor machine health and automatically clear stalled tasks, helping prevent operational workflow disruptions.</li>
+            <li>Assisted with AWS CloudWatch and Grafana alerting for real-time performance visibility and authored troubleshooting documentation that helped reduce escalations.</li>
+          </ul>
+        </div>
+        
+        <div class="technologies">
+          <h5>TECHNOLOGIES / PLATFORMS</h5>
+          <p class="tech-tags">Python · Java · Perl · AWS CloudWatch · Grafana · PagerDuty · Slack</p>
+        </div>
+      </article>
+      
+      <!-- Sectigo -->
+      <article class="experience-entry tertiary-role">
+        <h3 class="company-name">Sectigo</h3>
+        <h4 class="job-title">Web Security Engineer</h4>
+        <p class="role-summary">Supported customers with website security investigations, vulnerability remediation, platform hardening, and technical escalations.</p>
+        
+        <div class="key-impact">
+          <h5>KEY IMPACT</h5>
+          <ul>
+            <li>Investigated website security issues and malware trends while helping customers understand remediation and hardening recommendations.</li>
+            <li>Worked with XSS and SQL injection vulnerabilities and supported troubleshooting across DNS, firewalls, CDN providers, and content management systems.</li>
+            <li>Served as an escalation point between customers, internal teams, Development/R&D, and external CDN providers while creating internal technical documentation.</li>
+          </ul>
+        </div>
+        
+        <div class="technologies">
+          <h5>TECHNOLOGIES / AREAS</h5>
+          <p class="tech-tags">Web Security · XSS · SQL Injection · DNS · Firewalls · CDN · WordPress · Drupal</p>
+        </div>
+      </article>
+      
+      <!-- Arvig -->
+      <article class="experience-entry tertiary-role">
+        <h3 class="company-name">Arvig</h3>
+        <h4 class="job-title">Help Desk Technician</h4>
+        <p class="role-summary">Provided advanced network and technical support across fiber, DSL, wireless, and customer connectivity environments.</p>
+        
+        <div class="key-impact">
+          <h5>KEY IMPACT</h5>
+          <ul>
+            <li>Served as a senior escalation point for complex network issues and performed packet-level troubleshooting with Wireshark across fiber, DSL, and wireless environments.</li>
+            <li>Helped launch a new support office, establishing support processes and performance standards while leading a fiber-support initiative using remote troubleshooting.</li>
+            <li>Mentored new hires and developed troubleshooting documentation while achieving strong customer satisfaction and support-resolution performance.</li>
+          </ul>
+        </div>
+        
+        <div class="technologies">
+          <h5>TECHNOLOGIES / AREAS</h5>
+          <p class="tech-tags">Networking · Wireshark · Fiber · DSL · Wireless · Remote Troubleshooting</p>
+        </div>
+      </article>
+      
+      <!-- HCL Technologies -->
+      <article class="experience-entry tertiary-role">
+        <h3 class="company-name">HCL Technologies</h3>
+        <h4 class="job-title">Technical Support Representative</h4>
+        <p class="role-summary">Supported enterprise customers across learning-management integrations, platform configuration, data synchronization, and technical escalations.</p>
+        
+        <div class="key-impact">
+          <h5>KEY IMPACT</h5>
+          <ul>
+            <li>Led technical discussions with enterprise customers around LMS integrations and deployed/configured integration hubs used for data synchronization.</li>
+            <li>Served as an SME for platform configuration while documenting defects and acting as an escalation point for product defects and feature enhancements.</li>
+            <li>Mentored L1 and L2 support engineers while maintaining high case-resolution volume and approximately 90% customer satisfaction.</li>
+          </ul>
+        </div>
+        
+        <div class="technologies">
+          <h5>TECHNOLOGIES / AREAS</h5>
+          <p class="tech-tags">Enterprise Applications · LMS Integrations · Data Synchronization · Platform Configuration · Technical Support</p>
+        </div>
+      </article>
+      
+      <!-- Lake Superior College -->
+      <article class="experience-entry tertiary-role">
+        <h3 class="company-name">Lake Superior College</h3>
+        <h4 class="job-title">Student Center Technology Support</h4>
+        <p class="role-summary">Provided hands-on technology support across student-center hardware, software, workstations, printers, and basic IT operations.</p>
+        
+        <div class="key-impact">
+          <h5>KEY IMPACT</h5>
+          <ul>
+            <li>Diagnosed and resolved hardware and software issues across workstations, printers, and supporting systems.</li>
+            <li>Supported technology inventory and software-license management while assisting with help-desk requests and equipment tracking.</li>
+            <li>Used Microsoft Access to support help-desk request and technology-inventory management.</li>
+          </ul>
+        </div>
+        
+        <div class="technologies">
+          <h5>TECHNOLOGIES / AREAS</h5>
+          <p class="tech-tags">Hardware · Software · Workstations · Printers · Servers · Microsoft Access</p>
+        </div>
       </article>
     </section>
   </main>
   
   <footer>
-  <p>&copy; 2026 Sommy Yang. All rights reserved.</p>
-</footer>
+    <p>&copy; 2026 Sommy Yang. All rights reserved.</p>
+  </footer>
   <script src="../scripts/main.js"></script>
 </body>
 </html>

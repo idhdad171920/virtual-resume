@@ -880,3 +880,171 @@ footer p {
     max-width: 800px;
   }
 }
+
+/* Experience Page Styles */
+.experience-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-sm);
+}
+
+.experience-page h2 {
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-md);
+  border-bottom: none;
+}
+
+.page-intro {
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  max-width: 900px;
+  margin: 0 auto var(--spacing-2xl) auto;
+  line-height: 1.7;
+}
+
+/* Experience Entry Styles */
+.experience-entry {
+  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-xl);
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-primary);
+}
+
+.experience-entry.primary-role {
+  border-left-width: 6px;
+  padding: var(--spacing-xl) var(--spacing-xl);
+}
+
+.experience-entry.secondary-role {
+  border-left-width: 4px;
+}
+
+.experience-entry.tertiary-role {
+  border-left-width: 3px;
+  padding: var(--spacing-lg);
+}
+
+.company-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.job-title {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+.role-summary {
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+  font-style: italic;
+}
+
+/* Key Impact Section */
+.key-impact {
+  margin-bottom: var(--spacing-lg);
+}
+
+.key-impact h5 {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+}
+
+.key-impact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.key-impact li {
+  padding-left: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.key-impact li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.key-impact li:last-child {
+  margin-bottom: 0;
+}
+
+/* Reduce emphasis for tertiary roles */
+.tertiary-role .key-impact li {
+  font-size: var(--font-size-sm);
+}
+
+/* Technologies Section */
+.technologies {
+  margin-top: var(--spacing-lg);
+}
+
+.technologies h5 {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+}
+
+.tech-tags {
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .experience-page {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+  
+  .company-name {
+    font-size: 2rem;
+  }
+  
+  .experience-entry.primary-role {
+    padding: var(--spacing-2xl);
+  }
+  
+  .experience-entry.secondary-role {
+    padding: var(--spacing-xl);
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .experience-page {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+  
+  .company-name {
+    font-size: 2.25rem;
+  }
+  
+  .job-title {
+    font-size: 1.5rem;
+  }
+}
