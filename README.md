@@ -1,44 +1,49 @@
-# Personal Portfolio Website
+# Virtual Resume Website
 
-A simple, responsive personal portfolio website showcasing my professional journey in technology. Built with semantic HTML5 and CSS3, designed to be clean, accessible, and easy to maintain.
+A clean, professional virtual resume website showcasing my technical support and platform engineering experience. Built with semantic HTML5 and CSS3, designed for recruiters and hiring managers.
 
 ## Features
 
-- **About Section**: Personal introduction and background
-- **Tech Journey**: Story of how I got started in technology
-- **Experience**: Professional history and career progression
+- **Home**: Professional introduction highlighting technical support expertise with AI tooling (MCPs, AI ROI)
+- **Experience**: Detailed career history at Allstacks and Instawork with key accomplishments
+- **Contact**: Minimal, professional contact page (email only)
+- **View Resume**: Direct link to downloadable PDF resume (opens in new tab)
 - **Responsive Design**: Mobile-first approach that works on all devices (320px+)
 - **Semantic HTML**: Accessible and SEO-friendly structure
 
 ## Project Structure
 
 ```
-personal-portfolio-website/
-├── index.html              # Main HTML file
+virtual-resume/
+├── index.html              # Entry point (redirects to home.html)
 ├── styles/
-│   └── main.css           # Stylesheet
+│   └── main.css           # Global stylesheet
 ├── assets/                # Media assets
-│   ├── images/
-│   └── videos/
+│   └── resume/
+│       └── Sommy_Yang_Resume.pdf  # Finalized resume PDF
 ├── includes/              # Reusable HTML components
 │   ├── header.html
 │   └── footer.html
-├── main/                  # Additional pages
-│   ├── about.html
-│   ├── changelog.html
-│   ├── education.html
-│   ├── experience.html
-│   ├── hobbies.html
-│   ├── home.html
-│   ├── journey.html
-│   └── source.html
+├── main/                  # Site pages
+│   ├── home.html          # Homepage with professional introduction
+│   ├── experience.html    # Career history and accomplishments
+│   └── contact.html       # Contact information (email only)
 ├── scripts/               # JavaScript files
-│   ├── load-components.js
-│   └── main.js
+│   ├── load-components.js # Component loader
+│   └── main.js           # Main application logic
 └── README.md             # This file
 ```
 
-## Viewing the Site Locally
+## Site Navigation
+
+The site features a clean, recruiter-focused navigation:
+
+- **Home** - Professional introduction and technical expertise
+- **Experience** - Career history with measurable accomplishments
+- **Contact** - Email contact (sommykyang@gmail.com)
+- **View Resume** - PDF resume (opens in new tab)
+
+## Viewing the Site
 
 ### Option 1: Using a Local Web Server (Recommended)
 
@@ -46,9 +51,6 @@ personal-portfolio-website/
 ```bash
 # Python 3
 python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
 ```
 
 **Using Node.js (with http-server):**
@@ -60,74 +62,23 @@ npm install -g http-server
 http-server -p 8000
 ```
 
-**Using PHP:**
-```bash
-php -S localhost:8000
-```
-
 Then open your browser and navigate to `http://localhost:8000`
 
-### Option 2: Opening Directly in Browser
+### Option 2: View on GitHub Pages
 
-You can also open `index.html` directly in your browser by double-clicking the file or using:
-```bash
-# Windows
-start index.html
-
-# macOS
-open index.html
-
-# Linux
-xdg-open index.html
-```
-
-**Note**: Some features may not work correctly when opening files directly due to browser security restrictions.
+The live site is deployed at: `https://idhdad171920.github.io/virtual-resume/main/home.html`
 
 ## Deployment to GitHub Pages
 
-### Initial Setup
+This site is deployed via GitHub Pages.
 
-1. **Create a GitHub repository**
-   - Go to [GitHub](https://github.com) and create a new repository
-   - Name it `your-username.github.io` for a user site, or any name for a project site
-   - Keep it public (required for free GitHub Pages)
+### Live URL
+- **Site**: https://idhdad171920.github.io/virtual-resume/main/home.html
+- **Resume PDF**: https://idhdad171920.github.io/virtual-resume/assets/resume/Sommy_Yang_Resume.pdf
 
-2. **Initialize Git and push your code**
-   ```bash
-   # Initialize Git repository (if not already done)
-   git init
+### Updating the Site
 
-   # Add all files
-   git add .
-
-   # Commit your changes
-   git commit -m "Initial commit: Personal portfolio website"
-
-   # Add remote repository
-   git remote add origin https://github.com/your-username/your-repo-name.git
-
-   # Push to GitHub
-   git branch -M main
-   git push -u origin main
-   ```
-
-3. **Enable GitHub Pages**
-   - Go to your repository on GitHub
-   - Click on **Settings**
-   - Scroll down to **Pages** section (in the left sidebar)
-   - Under **Source**, select the branch you want to deploy (usually `main`)
-   - Select the root folder `/` as the source
-   - Click **Save**
-
-4. **Access your site**
-   - Your site will be available at:
-     - User site: `https://your-username.github.io`
-     - Project site: `https://your-username.github.io/your-repo-name`
-   - It may take a few minutes for the site to go live
-
-### Updating Your Site
-
-After making changes to your site:
+After making changes:
 
 ```bash
 # Stage your changes
@@ -140,46 +91,29 @@ git commit -m "Update: description of changes"
 git push
 ```
 
-GitHub Pages will automatically rebuild and deploy your site within a few minutes.
+GitHub Pages will automatically rebuild and deploy your site within 1-3 minutes.
 
-### Custom Domain (Optional)
+## Key Features
 
-To use a custom domain:
+### Professional Focus
+- Designed specifically for recruiters and hiring managers
+- Emphasizes technical support, platform engineering, and customer success experience
+- Highlights expertise with AI tooling (MCPs, AI ROI, Coding AI)
+- Clean, distraction-free layout focused on career accomplishments
 
-1. Add a `CNAME` file to your repository root with your domain name
-2. Configure your domain's DNS settings to point to GitHub Pages
-3. Enable HTTPS in GitHub Pages settings
+### Technical Implementation
+- Semantic HTML5 for accessibility and SEO
+- Responsive CSS3 with mobile-first design (320px+)
+- Component-based architecture with reusable header/footer
+- PDF resume integration with secure new-tab opening
+- No frameworks required - vanilla HTML/CSS/JS
 
-See [GitHub Pages documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) for detailed instructions.
-
-## Technologies Used
-
-- **HTML5**: Semantic markup for content structure
-- **CSS3**: Modern styling with Flexbox and media queries
-- **JavaScript**: Component loading and interactivity
-- **GitHub Pages**: Free static site hosting
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## Future Enhancements
-
-- Add images and videos to showcase projects
-- Implement smooth scrolling navigation
-- Add contact form
-- Include project portfolio section
-- Dark mode toggle
-- Blog section
-
-## License
-
-This project is open source and available for personal use.
+### Experience Highlights
+- **Allstacks**: Platform Support Engineer (99% SLA, 99% CSAT, 25% ticket reduction)
+- **Instawork**: Technical Support Engineer (100 support interactions/week, 95% CSAT)
 
 ## Contact
 
-Feel free to reach out if you have any questions or suggestions!
+**Email**: sommykyang@gmail.com
+
+For professional inquiries regarding technical support, customer engineering, platform support, or integration opportunities.
