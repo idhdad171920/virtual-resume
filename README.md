@@ -110,7 +110,8 @@ GitHub Pages will automatically rebuild and deploy your site within 1-3 minutes.
 
 ### Experience Highlights
 - **Allstacks**: Platform Support Engineer (99% SLA, 99% CSAT, 25% ticket reduction)
-- **Instawork**: Technical Support Engineer (100 support interactions/week, 95% CSAT)
+- **Vercel**: Senior Customer Success Engineer (97% Enterprise SLA, 95% CSAT, MTTR target attainment improved from 87% to 94% QoQ)
+- **Calabrio**: Technical Lead (90% API/WFM Engineering deflection, 97% attainment against 3-business-day MTTR target)
 
 ## Contact
 
